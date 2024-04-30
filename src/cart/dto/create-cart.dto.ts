@@ -1,16 +1,14 @@
-
 import { IsNotEmpty, IsString } from 'class-validator';
- 
-export class CreateProductDto {
+
+export class CreateCartDto {
   id: number;
- 
+
   @IsString()
   @IsNotEmpty()
-  name: string;
- 
+  product_name: string;
+
   @IsString()
   @IsNotEmpty()
-  description: string;
- 
+  no_of_products: number;
+
 }
- 

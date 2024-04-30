@@ -2,7 +2,7 @@ import { Injectable } from '@nestjs/common';
 import { CreateRegistrationDto } from './dto/create-registration.dto';
 import { UpdateRegistrationDto } from './dto/update-registration.dto';
 import { Repository } from 'typeorm';
-import { Registration } from 'src/entities/registration.entity';
+import { Registration } from 'src/entites/registration.entity';
 import { InjectRepository } from '@nestjs/typeorm';
  
 @Injectable()

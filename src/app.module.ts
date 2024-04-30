@@ -7,6 +7,7 @@ import config from 'ormconfig';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { ProductModule } from './product/product.module';
 import { CartModule } from './cart/cart.module';
+
  
 @Module({
   imports: [TypeOrmModule.forRoot(config), RegistrationModule, ProductModule, CartModule],
