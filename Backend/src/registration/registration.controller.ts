@@ -7,7 +7,7 @@ import { UpdateRegistrationDto } from './dto/update-registration.dto';
 export class RegistrationController {
   constructor(private readonly registrationService: RegistrationService) {}
  
-  @Post('register')
+  @Post()
   register(@Body(ValidationPipe) createUserDto: CreateRegistrationDto) {
     return this.registrationService.create(createUserDto);
   }
